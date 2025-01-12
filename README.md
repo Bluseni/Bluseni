@@ -122,10 +122,6 @@ server {
 sudo ln -s /etc/nginx/sites-available/flask_app /etc/nginx/sites-enabled
 sudo systemctl restart nginx
 
-## Test the set up
-
-http://44.201.132.99
-
 ## Securing the Application with SSL
 Install Certbot:
 sudo apt install certbot python3-certbot-nginx -y
