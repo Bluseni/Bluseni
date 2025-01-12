@@ -108,6 +108,7 @@ sudo nano /etc/nginx/sites-available/flask_app
 
 server {
     listen 80;
+    server_name 44.201.132.99
 
     location / {
         proxy_pass http://127.0.0.1:5000;
@@ -124,6 +125,35 @@ sudo systemctl restart nginx
 ## Test the set up
 
 http://44.201.132.99
+
+## Securing the Application with SSL
+Install Certbot:
+sudo apt install certbot python3-certbot-nginx -y
+## Obtain an SSL certificate:
+sudo certbot --nginx -d https://nextlevellinux.com
+
+## Test SSL auto-renewal
+sudo certbot renew --dry-run
+
+You can go and access the app securely at https://nextlevelinux.com
+
+
+## Skill Demostrated: 
+
+Setting up and managing EC2 instances.
+Deploying Python Flask applications.
+Configuring Nginx as a reverse proxy.
+Implementing SSL/TLS for secure communication.
+
+## What I Learned
+
+The importance of securing sensitive files in Git repositories.
+Configuring Nginx to work with Flask and Gunicorn.
+Automating server setup with systemd and Certbot.
+
+LET ME KNOW IF YOU'D LIKE ADDITIONAL TWEAKS OR SECTIONS!
+
+
 
 
 
