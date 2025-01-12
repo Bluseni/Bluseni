@@ -135,7 +135,7 @@ sudo certbot --nginx -d https://nextlevellinux.com
 ## Test SSL auto-renewal
 sudo certbot renew --dry-run
 
-You can go and access the app securely at https://nextlevelinux.com
+You can go and access the app securely at https://nextlevellinux.com
 
 
 ## Skill Demostrated: 
