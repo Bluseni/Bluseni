@@ -70,7 +70,7 @@ if __name__ == '__main__':
 
 ## Test the Flask app:
 python app.py
-http://44.201.132.99:5000
+http://18.205.155.73:5000
 
 ## Run Flask with Gunicorn
 gunicorn -w 3 -b 0.0.0.0:5000 app:app
@@ -108,7 +108,7 @@ sudo nano /etc/nginx/sites-available/flask_app
 
 server {
     listen 80;
-    server_name 44.201.132.99
+    server_name 18.205.155.73
 
     location / {
         proxy_pass http://127.0.0.1:5000;
